@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Diploma App</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+<header>
+  <div>
+    <span id="menuIcon" class="icon" onclick="toggleMenu()">☰</span>
+    <span id="backIcon" class="icon" onclick="goBack()" style="display:none">←</span>
+  </div>
+  <span class="icon" onclick="toggleSettings()">⋮</span>
+</header>
+
+<div id="menu">
+  <div onclick="goHome()">Home</div>
+</div>
+
+<div id="settings">
+  <label>
+    🌙 Night Mode
+    <input type="checkbox" id="theme">
+  </label>
+</div>
+
+<div id="overlay" onclick="closeAll()"></div>
+<div id="app"></div>
+
+  <script src="edit.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
