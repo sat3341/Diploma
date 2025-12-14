@@ -140,9 +140,12 @@ input[type="checkbox"] {
 
 
 iframe{
+  width: 100vw;
+  height: calc(100dvh - 52px);
+  background: #000;
   position: absolute;
   left: 0;
   top: 52px;
-  height: calc(100vh - 100px);
-  background: #000;
 }
+
+
